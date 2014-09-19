@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<link href="css/main.css" rel="stylesheet" type="text/css"/>
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:700,400&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+		<script src="js/main.js"></script>
+		<meta charset="utf-8">
+		<title> Квест CSSSR: Рустам Абубекаров </title>
+
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<div id="logo">
+					<img src="img/logo.png" alt="CSSSR" />
+					<p>Секретный архив учреждения</p>
+				</div>
+				<div id="top-secret">
+					<img src="img/secret.png" alt="Секретно! Заполненно собственноручно" />
+				</div>
+				
+				<div id="delo">
+					<img src="img/delo.png" alt="ДЕЛО" />
+				</div>
+			</header>
+			
+			
+			
+			
+			<!--ОСНОВНАЯ ЧАСТЬ-->
+			
+			<div id="main">
+				<form name="anketa">
+				
+				
+				 
+				 <!--ОБЩАЯ ИНФОРМАЦИЯ-->
+				 
+					<div id="common-info">
+						<div class="common-input">
+							<div class='row'>     
+								<div>Полное ФИО</div>     
+								<div>
+									<input type="text" id="fio">
+								</div> 
+							</div>
+						</div>
+						<div class="common-input">
+							<div class='row'>     
+								<div>Год рождения</div>     
+								<div>
+									<input type="text" id="born-year">
+								</div>      
+							</div>
+						</div>
+						<div class="common-input">
+							<div class='row'>     
+								<div>Место жительства</div>     
+								<div>
+									<input type="text" id="living-place">
+								</div>      
+							</div>
+						</div>
+						<div class="common-input">
+							<div class='row'>     
+								<div>Скайп</div>     
+								<div>
+									<input type="text" id="skype">
+								</div>      
+							</div>
+						</div>
+						<div class="common-input">
+							<div class='row'>     
+								<div>Почта</div>     
+								<div>
+									<input type="text" id="mail">
+								</div>      
+							</div>
+						</div>
+					</div>
+					
+					
+				<!--ВЫПУСКНИК ХТМЛАКАДЕМИИ-->	
+					
+					<div id="htmlacademy">
+						<p> Выпускник <a href="http://htmlacademy.ru/">htmlacademy.ru</a>
+							<input name="htmlacademy" type="radio" value="yes" id="html-yes" />
+							<label for="html-yes"><span></span>Да</label>
+							<input name="htmlacademy" type="radio" value="no" id="html-no"/>
+							<label for="html-no"><span></span>Нет</label>
+						</p>
+						
+					</div>
+				
+				
+				<!--ПРАКТИЧЕСКИЕ НАВЫКИ-->	
+					
+					<div id="practice-skills">
+						<p>Практические навыки</p>
+						<table id="tip">
+							<tr>
+								<td id="star"><img src="img/star.png" alt="*" /></td>
+								<td id="tabbed">Отметьте только те технологии и типы задач, с которыми вы хорошо знакомы. Отсутсвие опыта отнюдь не означает, что у вас меньше шансов стать нашим сотрудником. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться. </td>
+							</tr>
+						</table>
+						
+						<table id="skill-list">
+							<tr>
+								<td id="skill-list-td1">
+									<p>	
+										<input type="checkbox" id="check-bem" />
+										<label for="check-bem"><span></span>Методология БЭМ</label>
+									</p>
+									<p>
+										<input type="checkbox" id="check-jquery" />
+										<label for="check-jquery"><span></span>jQuery</label>
+									</p>
+									<p>
+										<input type="checkbox" id="check-grunt" />
+										<label for="check-grunt"><span></span>Использую GRUNT</label>
+									</p>
+									<p>
+										<input type="checkbox" id="check-haml" />
+										<label for="check-haml"><span></span>HAML</label>
+									</p>
+									<p>
+										<input type="checkbox" id="check-sass" />
+										<label for="check-sass"><span></span>SASS</label>
+									</p>
+									<p>
+										<input type="checkbox" id="check-less" />
+										<label for="check-less"><span></span>LESS</label>
+									</p>
+									<p>
+										<input type="checkbox" id="check-cs" />
+										<label for="check-cs"><span></span>CoffeeScript</label>
+									</p>
+								</td>
+								
+								<td id="skill-list-td2">
+									<p>	<input type="checkbox" id="check-jade" />
+										<label for="check-jade"><span></span>Jade</label>
+									</p>
+									<p>
+										<input type="checkbox" id="check-stylus" />
+										<label for="check-stylus"><span></span>Stylus</label>
+									</p>
+									<p>
+										<input type="checkbox" id="check-angular" />
+										<label for="check-angular"><span></span>Знаю (изучаю) Angular</label>
+									</p>
+									<p>
+										<input type="checkbox" id="check-android" />
+										<label for="check-android"><span></span>Верстка под Android</label>
+									</p>
+									<p>
+										<input type="checkbox" id="check-ios" />
+										<label for="check-ios"><span></span>Верстка под iOS</label>
+									</p>
+									<p>
+										<input type="checkbox" id="check-windows" />
+										<label for="check-windows"><span></span>Верстка под Windows Phone</label>
+									</p>
+								</td>
+								
+								<td id="skill-list-td3">
+									<p>	
+										<input type="checkbox" id="check-mail" />
+										<label for="check-mail"><span></span>Верстка рассылок</label>
+									</p>
+									<p>
+										<input type="checkbox" id="check-adaptive" />
+										<label for="check-adaptive"><span></span>Адаптивная верстка</label>
+									</p>
+									<p>
+										<input type="checkbox" id="check-dropbox" />
+										<label for="check-dropbox"><span></span>Использую Dropbox</label>
+									</p>
+									<p>
+										<input type="checkbox" id="check-gmail" />
+										<label for="check-gmail"><span></span>Использую Gmail</label>
+									</p>
+									<p>
+										<input type="checkbox" id="check-github" />
+										<label for="check-github"><span></span>Использую GitHub</label>
+									</p>
+
+								</td>
+								
+							</tr>
+						</table>
+						
+					</div>
+					
+					
+				<!--УРОВЕНЬ ВЛАДЕНИЯ ДЖАВАСКРИПТ-->	
+				
+					<div id="js-skill-level">
+						<h3>Уровень владения JavaScript</h3>
+						<div id="js-skill-slider"></div>
+						<table>
+							<tr>
+								<td id="js-level-td0"><p class="p-skill" data-skill="0">Не владею</p></td>
+								<td id="js-level-td1"><p class="p-skill" data-skill="1">Использую готовые решения</p></td>
+								<td id="js-level-td2"><p class="p-skill" data-skill="2">Использую готовые решения <br> и умею их переделывать</p></td>
+								<td id="js-level-td3"><p class="p-skill" data-skill="3">Пишу сложные скрипты</p></td>
+							</tr>
+						</table>
+					</div>
+					
+					
+				<!--ДАТА ЗАПОЛНЕНИЯ-->	
+				
+					<div id="div-date">
+						<div>Дата заполнения</div>     
+						<div>
+							<input type="text" id="date">
+						</div> 
+					</div>	
+					
+					
+					
+				</form>
+			</div>
+
+		</div>
+
+	</body>
+</html>
