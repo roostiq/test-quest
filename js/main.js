@@ -35,7 +35,7 @@
 		"check-adaptive" : 1,
 		"check-dropbox" : 1,
 		"check-gmail" :1,
-		"check-github" : 0,
+		"check-github" : 1,
 		"js-skill" : 2,
 		"date": "19.09.2014"
 	};
