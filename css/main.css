@@ -202,15 +202,14 @@ input[type="checkbox"]:checked + label span {
 	margin-left: -3px;
 }
 
-#js-skill-level a {
-	text-decoration: none;
+#js-skill-level p {
+	cursor: pointer;
 }
 
 #js-skill-level td {
 	font-size: 13px;
 	font-weight: 700;
 	vertical-align: top;
-	cursor: pointer;
 }
 
 #js-level-td0 { width: 143px; }
