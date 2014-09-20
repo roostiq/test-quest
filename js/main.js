@@ -14,7 +14,7 @@
 	var user = {
 		"fio" : "Абубекаров Рустам Фатихович",
 		"born-year" : 1986,
-		"living-place" : "Москва",
+		"living-place" : "г. Москва, Россия",
 		"skype" : "abubekarov",
 		"mail" : "roostiq@gmail.com",
 		"html-no" : 1,
@@ -86,10 +86,10 @@
 	//Расставляем значения из объекта user по форме
 		$.each( user, function(propName, val){
 			if (val==0 || val==1){ 
-				$('input[id='+ propName+']').prop('checked',val);
+				$("input[id="+ propName+"]").prop("checked",val);
 			}
 			else {
-				$('input[id='+ propName+']').prop('value',val);
+				$("input[id="+ propName+"]").prop("value",val);
 			}
 		});
 	

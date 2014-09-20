@@ -1,4 +1,4 @@
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,table { 
+ï»¿body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,table { 
     margin:0;
     padding:0;
 }
@@ -7,13 +7,20 @@ body {
 	background-color: #797979;
 }
 
-input, textarea { outline:none; }
-input:active, textarea:active { outline:none; }
+input, 
+textarea { 
+	outline: none; 
+}
+
+input:active, 
+textarea:active {
+	outline: none; 
+}
+
 :focus { outline:none; } 
 
-
 #wrapper{
-	background: url(../img/pattern.jpg);
+
 	width: 1000px;
 	margin: 0 auto;
 	padding: 0px;
@@ -21,12 +28,12 @@ input:active, textarea:active { outline:none; }
 	font-size:22.43px;
 	font-weight: 700;
 	color: #2f1b15;
-
+	background: url(../img/pattern.jpg);
 }
 
 #logo {
-	float:left;
-	padding-top:67px;
+	float: left;
+	padding-top: 67px;
 	padding-left: 46px
 }
 
@@ -37,7 +44,7 @@ input:active, textarea:active { outline:none; }
 }
 
 #top-secret {
-	float:right;
+	float: right;
 	padding-top: 50px;
 	padding-right: 54px;
 }
@@ -45,7 +52,7 @@ input:active, textarea:active { outline:none; }
 #delo {
 	clear: both;
 	margin: 0 auto;
-	width:221px;
+	width: 221px;
 	padding-top: 22px;
 	padding-right: 40px;
 }
@@ -59,21 +66,20 @@ margin: auto;
 	padding-top: 30px;
 }
 
-#common-info > div {
-	border: 0px dotted red;
+.common-input {
 	margin-top: 11px;
 }
 
 input[type="text"] {
-	background: url(../img/input-bg.png) 0px -10px;
 	height: 50px;
-	font-size: 30px;
-	font-family: 'Courier New';
-	border: 0px solid grey;
 	padding-left: 15px;
 	margin-bottom: 1px;
 	margin-left:10px;
-	color: #231f20;
+	color: #231f20;	
+	font-size: 30px;
+	font-family: 'Courier New';	
+	background: url(../img/input-bg.png) 0px -10px;	
+	border: 0px solid grey;	
 }
 
 .row  {
@@ -118,10 +124,9 @@ input[type="radio"] + label span {
     vertical-align: middle;
     width: 28px;
     height: 28px;
-    margin: -1px 4px 0 0;
+    margin: -1px 4px 0 17px;
     background: url(../img/radiooff.png);
     cursor: pointer;
-	margin-left: 17px;
 	
 }
 input[type="radio"]:checked + label span {
@@ -140,7 +145,7 @@ input[type="checkbox"] + label span {
 } 
 		
 input[type="checkbox"]:checked + label span {
-	   background:url(../img/checkon.png);
+	background:url(../img/checkon.png);
 }
 
 #practice-skills label {
@@ -152,19 +157,21 @@ input[type="checkbox"]:checked + label span {
 	margin-top: 10px;
 	width: 100%;
 }
+
 #star {
 	width:15px;
 }
+
 #star img {
 	vertical-align: top;
 	margin-top: 3px;
 }
 
 #tabbed {
+	padding: 0;	
 	font-weight: 400;
 	color: #3d3d3d;
 	font-size:14px;
-	padding: 0;
 	line-height: 1.5;
 }
 
@@ -194,6 +201,7 @@ input[type="checkbox"]:checked + label span {
 #js-skill-level table {
 	margin-left: -3px;
 }
+
 #js-skill-level a {
 	text-decoration: none;
 }
@@ -219,40 +227,43 @@ input[type="checkbox"]:checked + label span {
 }
 
 
-/* Êîíòåéíåð ñëàéäåðà */
+/* ÐšÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€ ÑÐ»Ð°Ð¹Ð´ÐµÑ€Ð° */
 .ui-slider {
-position: relative;
+	position: relative;
 }
-/* Ïîëçóíîê */
+
+/* ÐŸÐ¾Ð»Ð·ÑƒÐ½Ð¾Ðº */
 .ui-slider .ui-slider-handle {
-position: absolute;
-z-index: 2;
-width: 16px; /* Çàäàåì íóæíóþ øèðèíó */
-height: 24px; /* è âûñîòó */
-background: url(../img/slid.png) no-repeat; /* êàðòèíêà èçîáðàæàþùàÿ ïîëçóíîê. */
-cursor: pointer
+	position: absolute;
+	z-index: 2;
+	width: 16px; /* Ð—Ð°Ð´Ð°ÐµÐ¼ Ð½ÑƒÐ¶Ð½ÑƒÑŽ ÑˆÐ¸Ñ€Ð¸Ð½Ñƒ */
+	height: 24px; /* Ð¸ Ð²Ñ‹ÑÐ¾Ñ‚Ñƒ */
+	background: url(../img/slid.png) no-repeat; /* ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ° Ð¸Ð·Ð¾Ð±Ñ€Ð°Ð¶Ð°ÑŽÑ‰Ð°Ñ Ð¿Ð¾Ð»Ð·ÑƒÐ½Ð¾Ðº. */
+	cursor: pointer
 }
 
-/* ïîçèöèîíèðóåì ïîëçóíêè */
+/* Ð¿Ð¾Ð·Ð¸Ñ†Ð¸Ð¾Ð½Ð¸Ñ€ÑƒÐµÐ¼ Ð¿Ð¾Ð»Ð·ÑƒÐ½ÐºÐ¸ */
 .ui-slider-horizontal .ui-slider-handle {
-top: 0px;
-margin-left: -6px;
+	top: 0px;
+	margin-left: -6px;
 }
 
-/* îôîðìëåíèå ïîëîñû ïî êîòîðîé õîäèò ïîëçóíîê */
+/* Ð¾Ñ„Ð¾Ñ€Ð¼Ð»ÐµÐ½Ð¸Ðµ Ð¿Ð¾Ð»Ð¾ÑÑ‹ Ð¿Ð¾ ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð¹ Ñ…Ð¾Ð´Ð¸Ñ‚ Ð¿Ð¾Ð»Ð·ÑƒÐ½Ð¾Ðº */
 .ui-widget-content {
-background: url(../img/line.png) no-repeat;
-width:760px;
-height:44px;
+	background: url(../img/line.png) no-repeat;
+	width:760px;
+	height:44px;
 }
 
 #div-date {
 	padding: 40px 0 75px 0;
 }
-#div-date  > div{
+
+.date-line{
 	display:inline;
 	vertical-align: bottom;
 }
+
 #div-date input{
 	width:	200px;
 }
