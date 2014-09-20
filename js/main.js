@@ -77,14 +77,14 @@ $(document).ready(function() {
 	});
 
 	//Расставляем значения из объекта user по форме
-		$.each( user, function(propName, val){
-			if (val==0 || val==1){ 
-				$("input[id="+ propName+"]").prop("checked",val);
-			}
-			else {
-				$("input[id="+ propName+"]").prop("value",val);
-			}
-		});
+	$.each( user, function(propName, val){
+		if (val==0 || val==1){ 
+			$("input[id="+ propName+"]").prop("checked",val);
+		}
+		else {
+			$("input[id="+ propName+"]").prop("value",val);
+		}
+	});
 		
 	// Анимированное перемещение ползунка на нужную позицию
 	function moveTo(i){
